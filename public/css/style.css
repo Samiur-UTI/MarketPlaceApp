@@ -1,0 +1,14 @@
+.img{
+    width: 200px !important;
+}
+.image-wrapper{
+    display: flex;
+    justify-content: center;
+    padding:5px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
