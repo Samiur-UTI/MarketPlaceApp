@@ -9,6 +9,7 @@
   "author": "Samiur",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "nodemailer": "^6.4.17",
     "nodemailer-mailgun-transport": "^2.0.2"

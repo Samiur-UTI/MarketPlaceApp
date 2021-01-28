@@ -5,10 +5,14 @@ const path = require("path");
 app.set("view engine", "ejs");
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
-
+app.use(express.static("public"));
 
 app.get("/", (req,res) => {
-    res.sendFile(path.join(__dirname,"view","index.html"))
+    res.render("index")
+    //res.sendFile(path.join(__dirname,"view","index.html"))
+})
+app.post("/", (req,res) => {
+    res.json({message: "This is how we email!"})
 })
 
 
