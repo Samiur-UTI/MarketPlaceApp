@@ -12,6 +12,7 @@ app.get("/", (req,res) => {
     //res.sendFile(path.join(__dirname,"view","index.html"))
 })
 app.post("/", (req,res) => {
+    console.log("Data: ", req.body)
     res.json({message: "This is how we email!"})
 })
 
